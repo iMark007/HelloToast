@@ -7,6 +7,7 @@
 //
 
 #import "testViewController.h"
+#import "MyToast.h"
 
 @interface testViewController ()
 
@@ -35,4 +36,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ButtonClicked:(id)sender {
+    [MyToast showWithText:@"This is the Toast " :380 :1];
+}
 @end

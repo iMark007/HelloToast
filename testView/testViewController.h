@@ -10,4 +10,5 @@
 
 @interface testViewController : UIViewController
 
+- (IBAction)ButtonClicked:(id)sender;
 @end
