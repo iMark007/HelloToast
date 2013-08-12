@@ -16,6 +16,10 @@
 		2B7FD88B17B87A9D00191F0F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FD88A17B87A9D00191F0F /* Default.png */; };
 		2B7FD88D17B87A9D00191F0F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FD88C17B87A9D00191F0F /* Default@2x.png */; };
 		2B7FD88F17B87A9D00191F0F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FD88E17B87A9D00191F0F /* Default-568h@2x.png */; };
+		2B7FD89617B87AB900191F0F /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FD89517B87AB900191F0F /* Readme */; };
+		2BD5D41417B8814500A86A7C /* libMtimeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD5D41317B8814500A86A7C /* libMtimeLibrary.a */; };
+		2BD5D41917B881CC00A86A7C /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5D41717B881CC00A86A7C /* testViewController.m */; };
+		2BD5D41A17B881CC00A86A7C /* testViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5D41817B881CC00A86A7C /* testViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		2B7FD88A17B87A9D00191F0F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2B7FD88C17B87A9D00191F0F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2B7FD88E17B87A9D00191F0F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B7FD89517B87AB900191F0F /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		2BD5D41217B8813100A86A7C /* MyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyToast.h; path = Classes/MyToast.h; sourceTree = "<group>"; };
+		2BD5D41317B8814500A86A7C /* libMtimeLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMtimeLibrary.a; path = lib/libMtimeLibrary.a; sourceTree = "<group>"; };
+		2BD5D41617B881CC00A86A7C /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testViewController.h; path = testView/testViewController.h; sourceTree = "<group>"; };
+		2BD5D41717B881CC00A86A7C /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testViewController.m; path = testView/testViewController.m; sourceTree = "<group>"; };
+		2BD5D41817B881CC00A86A7C /* testViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = testViewController.xib; path = testView/testViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 				2B7FD87917B87A9D00191F0F /* UIKit.framework in Frameworks */,
 				2B7FD87B17B87A9D00191F0F /* Foundation.framework in Frameworks */,
 				2B7FD87D17B87A9D00191F0F /* CoreGraphics.framework in Frameworks */,
+				2BD5D41417B8814500A86A7C /* libMtimeLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +62,10 @@
 		2B7FD86C17B87A9D00191F0F = {
 			isa = PBXGroup;
 			children = (
+				2BD5D41517B8819400A86A7C /* testView */,
+				2B7FD89517B87AB900191F0F /* Readme */,
+				2BD5D40D17B8805400A86A7C /* Classes */,
+				2BD5D40C17B8804700A86A7C /* lib */,
 				2B7FD87E17B87A9D00191F0F /* HelloToast */,
 				2B7FD87717B87A9D00191F0F /* Frameworks */,
 				2B7FD87617B87A9D00191F0F /* Products */,
@@ -97,6 +112,32 @@
 				2B7FD88E17B87A9D00191F0F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BD5D40C17B8804700A86A7C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5D41317B8814500A86A7C /* libMtimeLibrary.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		2BD5D40D17B8805400A86A7C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5D41217B8813100A86A7C /* MyToast.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2BD5D41517B8819400A86A7C /* testView */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5D41617B881CC00A86A7C /* testViewController.h */,
+				2BD5D41717B881CC00A86A7C /* testViewController.m */,
+				2BD5D41817B881CC00A86A7C /* testViewController.xib */,
+			);
+			name = testView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +195,8 @@
 				2B7FD88B17B87A9D00191F0F /* Default.png in Resources */,
 				2B7FD88D17B87A9D00191F0F /* Default@2x.png in Resources */,
 				2B7FD88F17B87A9D00191F0F /* Default-568h@2x.png in Resources */,
+				2B7FD89617B87AB900191F0F /* Readme in Resources */,
+				2BD5D41A17B881CC00A86A7C /* testViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +209,7 @@
 			files = (
 				2B7FD88517B87A9D00191F0F /* main.m in Sources */,
 				2B7FD88917B87A9D00191F0F /* AppDelegate.m in Sources */,
+				2BD5D41917B881CC00A86A7C /* testViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +289,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloToast/HelloToast-Prefix.pch";
 				INFOPLIST_FILE = "HelloToast/HelloToast-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +305,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloToast/HelloToast-Prefix.pch";
 				INFOPLIST_FILE = "HelloToast/HelloToast-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,6 +334,7 @@
 				2B7FD89417B87A9D00191F0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
